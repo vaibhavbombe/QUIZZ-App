@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className="header">
         <Link to="/" className="title">
-            Quizz-Game
+            Quizz-HUB
         </Link>
         <hr className="divider"/>
     </div>

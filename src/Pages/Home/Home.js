@@ -13,13 +13,19 @@ const Home = ({name,setName}) => {
         <div>
             <span style={{fontsize:30}}>Quiz Settings</span>
             <div className="settings__select">
-            <TextField style={{marginBottom:25}} label="Enter Your Name" variant="outlined" 
-            onChange={(e) => setName(e.target.value)}/>
-            
-            <TextField select label="Select Category" 
-              
-              variant="outlined" style={{marginBottom:30}}
-            
+            <TextField
+              style={{ marginBottom: 25 }}
+              label="Enter Your Name"
+              variant="outlined"
+              onChange={(e) => setName(e.target.value)}
+            />
+            <TextField
+              select
+              label="Select Category"
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
+              variant="outlined"
+              style={{ marginBottom: 30 }}
             >
               {
                 Categories.map((cat) => (
